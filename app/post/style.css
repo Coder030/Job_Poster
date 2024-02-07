@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+.butt{
+  margin: 0 auto;
+  display: block;
+  width: 150px;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  background-color: #3B82F6;
+  color: white;
+  /* position: relative;
+  top: 25px; */
+
+}
+.butt:hover{
+  background-color: #543bf6;
+}
+.headering {
+  text-align: center;
+  font-size: 45px;
+  position: relative;
+  top:10px;
+  font-family: 'Protest Revolution';
+}
+
+hr{
+  position: relative;
+  top: 9px;
+}
+#compInp{
+  position: relative;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  height: 30px;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 20px;
+}
+#compLab{
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+}
+#postInp{
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 60px;
+  height: 30px;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 20px;
+}
+#postLab{
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+}
+#contactInp{
+  position: relative;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  height: 30px;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 20px;
+}
+#contactLab{
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+}
+#contactEInp{
+  position: relative;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  height: 30px;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 20px;
+}
+#contactELab{
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+}
+
+.form{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(249, 247, 247);
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 8px;
+  position: relative;
+  top: 30px;
+}
+
+.create{
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+}
+.link2{
+  text-decoration: none;
+}
