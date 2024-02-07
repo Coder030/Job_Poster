@@ -1,4 +1,3 @@
-import { log } from "console";
 import "./style.module.css"
 
 export default async function Page() {
