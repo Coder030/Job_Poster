@@ -11,3 +11,4 @@ export default function DashboardLayout({
     </section>
   )
 }
+export const dynamic = 'force-dynamic'
