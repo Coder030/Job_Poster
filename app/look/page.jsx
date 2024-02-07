@@ -1,7 +1,7 @@
 import styles from "./style.module.css"
 export default async function Page() {
 
-  var response = await fetch("https://test-backend-p5ig.onrender.com/full");
+  var response = await fetch("https://test-backend-p5ig.onrender.com/full", {cache:"no-store"});
 
   var data = await response.json()
   console.log(data);
