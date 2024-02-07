@@ -1,5 +1,5 @@
+import styles from "./style.module.css"
 import Link from "next/link"
-import "./style.module.css"
 import { redirect } from "next/navigation";
 
 export default function Page() {
@@ -24,26 +24,26 @@ export default function Page() {
     return (
 
       <>
-        <h1 className="headering">Post new job</h1>
-        <hr className="h"/>
-        <form action={createAccount} className="form">
+        <h1 className={styles.headering}>Post new job</h1>
+        <hr className={styles.h}/>
+        <form action={createAccount} className={styles.form}>
         
-          <label id="compLab" htmlFor="company">Company: </label>
+          <label id={styles.compLab} htmlFor="company">Company: </label>
           <br />
-          <input type="text" name="company" id="compInp" autoComplete="off"/>
+          <input type="text" name="company" id={styles.compInp} autoComplete="off"/>
           <br />
-          <label id="postLab" htmlFor="post">Post: </label>
+          <label id={styles.postLab} htmlFor="post">Post: </label>
           <br />
-          <input type="text" name="post" id="postInp" autoComplete="off"/>
+          <input type="text" name="post" id={styles.postInp} autoComplete="off"/>
           <br />
-          <label id="contactLab" htmlFor="contact">Contact Number: </label>
+          <label id={styles.contactLab} htmlFor="contact">Contact Number: </label>
           <br />
-          <input type="text" name="contact" id="contactInp" autoComplete="off"/>
+          <input type="text" name="contact" id={styles.contactInp} autoComplete="off"/>
           <br />
-          <label id="contactELab" htmlFor="contactE">Contact Email: </label>
+          <label id={styles.contactELab} htmlFor="contactE">Contact Email: </label>
           <br />
-          <input type="text" name="contactE" id="contactEInp" autoComplete="off"/>
-          <button className="butt" type="submit">
+          <input type="text" name="contactE" id={styles.contactEInp} autoComplete="off"/>
+          <button className={styles.butt} type="submit">
             Create
           </button>
         </form>
