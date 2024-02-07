@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .header {
     text-align: center;
     font-size: 50px;
     position: relative;
     top: 20px;
-    font-family: 'Rubik Burned', system-ui;
+    font-family: 'Rubik Vinyl', system-ui;
 }
 .p{
     width: 520px;
     position: relative;
     top: 35px;
     margin: auto;
+    font-family: Inter;
 }
 .fj{
     margin: 0 auto;
@@ -27,6 +30,7 @@
     top: 90px;
     text-decoration: none;
     margin-bottom: 15px;
+    font-family: Inter;
 }
 .fj:hover{
     background-color: #673bf6;
@@ -48,6 +52,7 @@
     top: 90px;
     text-decoration: none;
     margin-bottom: 15px;
+    font-family: Inter;
 }
 .np:hover{
     background-color: #673bf6;

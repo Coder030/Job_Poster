@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
 
 .butt{
   margin: 0 auto;
@@ -23,7 +24,7 @@
   font-size: 45px;
   position: relative;
   top:10px;
-  font-family: 'Protest Revolution';
+  font-family: 'Rubik Vinyl';
 }
 
 .h{
