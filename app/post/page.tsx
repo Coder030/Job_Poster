@@ -1,5 +1,5 @@
 import Link from "next/link"
-import "./style.css"
+import "./style.module.css"
 import { redirect } from "next/navigation";
 
 export default function Page() {
@@ -25,7 +25,7 @@ export default function Page() {
 
       <>
         <h1 className="headering">Post new job</h1>
-        <hr />
+        <hr className="h"/>
         <form action={createAccount} className="form">
         
           <label id="compLab" htmlFor="company">Company: </label>

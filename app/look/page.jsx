@@ -1,5 +1,5 @@
 import { log } from "console";
-import "./style.css"
+import "./style.module.css"
 
 export default async function Page() {
 
@@ -10,15 +10,15 @@ export default async function Page() {
   
   return(
     <>
-      <h1>Welcome to Finder!</h1>
+      <h1 className="head">Welcome to Finder!</h1>
       <p className="heading">You can find whatever job you want here</p>
       {/* {JSON.stringify(data)} */}
       {data.map(mai => 
       <div className="things" key={mai.company}>
         <p className="comp">{mai.company} - {mai.post}</p>
         <p className="inf">Contact Information - </p>
-        <p>Phone Number: {mai.phone_num}</p>
-        <p>Email: {mai.email}</p>
+        <p className="ph">Phone Number: {mai.phone_num}</p>
+        <p className="e">Email: {mai.email}</p>
       </div>
       )}
     </>
