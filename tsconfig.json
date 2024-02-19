@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/page.tsx", "app/layout.jsx", "app/global.jsx", "app/look/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/page.tsx", "app/layout.jsx", "app/global.jsx", "app/api/look/page.jsx", "middleware.js", "middleware.js"],
   "exclude": ["node_modules"]
 }

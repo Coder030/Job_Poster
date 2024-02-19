@@ -49,3 +49,13 @@
   font-weight: 600;
   font-size: 23px;
 }
+button{
+  margin: 0 auto;
+  display: block;
+  width: 150px;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  background-color: #3B82F6;
+  color: white;
+}
