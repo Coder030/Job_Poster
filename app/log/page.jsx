@@ -14,7 +14,6 @@ function Page() {
   }
   
   async function fetchCookie() {
-    console.log("hello" + name2);
     try {
       setLoad(true)
       const response = await fetch("https://test-backend-p5ig.onrender.com/get_cookie", {
@@ -29,7 +28,6 @@ function Page() {
       });
 
       const json = await response.json();
-      console.log(json);
       setLoad(false)
       if (json.data === "nf") {
         setMessage("Sorry. The user is not found. Please check if there is a typo error. Else, you are a new user, please sign in to continue");
@@ -43,7 +41,6 @@ function Page() {
       console.error('Error fetching cookie:', error);
       setMessage("Error fetching cookie");
     }
-    console.log(flag);
   }
 
   return (

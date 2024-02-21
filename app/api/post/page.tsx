@@ -25,7 +25,6 @@ export default function Page() {
       setEm(e.target.value)
     }
     const createAccount = async () => {
-      console.log(comp, post, phn, em);
       
       const response = await fetch("https://test-backend-p5ig.onrender.com/api", {
         method: 'POST',
@@ -41,7 +40,6 @@ export default function Page() {
         headers: {'Content-Type': 'application/json'},
       })
       const data = await response.json();
-      console.log(data);
       
         if(data.message === "nvt"){
           setFlag2(true)

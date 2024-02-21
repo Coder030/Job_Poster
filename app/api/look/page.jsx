@@ -12,7 +12,6 @@ export default function Page() {
   const [data3, setData3] = useState(null)
   const {userData, setUserData} = useContext(UserContext)
   const [flag, setFlag] = useState(false)
-  console.log(userData, setUserData);
   try {
     const flag = true;
     useEffect(() => {
@@ -38,14 +37,11 @@ export default function Page() {
       }
 
       var data = await response.json();
-      console.log(data);
       setData2(data)
       setData3(data1['message']['id'])
       }
       fetchData()
     }, [data2])
-    console.log("Response data:", data2);
-    console.log("data 2:", data3);
     if(data2.message === "nvt"){
       return(
       <>
@@ -69,7 +65,6 @@ export default function Page() {
                 <p className={styles.e}>Email: {mai.email}</p>
                 {(mai.belongsToId === data3) && <button className={styles.button} onClick={async () => {
                   setFlag(true)
-                  console.log(mai.JobID);
                   const response = await fetch(`https://test-backend-p5ig.onrender.com/api/${mai.JobID}`, {
                     method: "DELETE",
                     credentials: "include",
@@ -78,7 +73,6 @@ export default function Page() {
                     headers: {'Content-Type': 'application/json'},
 
                   })
-                  console.log(await response.json());
                 }}>Close this?</button>}
                 {/* <Link style={{textDecoration: "none", color:"white"}} href="/"></Link> */}
               </div>

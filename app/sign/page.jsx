@@ -15,7 +15,6 @@ function Page() {
   }
 
   async function makeCookie() {
-    console.log("hello" + name2);
     try {
       setLoad(true)
       const response = await fetch("https://test-backend-p5ig.onrender.com/make_cookie", {
@@ -30,14 +29,11 @@ function Page() {
       });
   
       const json = await response.json();
-      console.log(json);
       setLoad(false)
       if(json.message === 'same'){
-        console.log('already exists');
         setFlag(true)
       }
       else{
-        console.log('success');
         setMessage("Success! New user created!")
         setFlag(false)
     }} 
