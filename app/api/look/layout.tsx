@@ -1,4 +1,4 @@
-
+import UserProvider from "../../provider"
 
 export default function DashboardLayout({
   children, // will be a page or nested layout
@@ -6,8 +6,10 @@ export default function DashboardLayout({
   children: React.ReactNode
 }) {
   return (
-    <section>
-      {children}
-    </section>
+    <UserProvider>
+      <section>
+        {children}
+      </section>
+    </UserProvider>
   )
 }

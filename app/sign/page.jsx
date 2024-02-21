@@ -3,6 +3,7 @@
 import { redirect } from "next/navigation";
 import "./style.css"
 import { useState } from "react";
+import Link from "next/link";
 
 function Page() {
   const [name2, setName] = useState('')
@@ -17,7 +18,7 @@ function Page() {
     console.log("hello" + name2);
     try {
       setLoad(true)
-      const response = await fetch("http://localhost:2000/make_cookie", {
+      const response = await fetch("https://test-backend-p5ig.onrender.com/make_cookie", {
         method: 'POST', 
         body: JSON.stringify({
           name: name2
@@ -47,7 +48,7 @@ function Page() {
 
   return (
     <>
-    <h1 style={{textAlign: "center"}}>This is the sign in page. This page is for you if you have not already registered</h1>
+    <h1 style={{textAlign: "center"}}>This is the sign up page. This page is for you if you have not already registered</h1>
       <div className="div1">
         <label htmlFor="username" className="lab">Username: </label>
         <input value={name2} autoComplete="off" type="text" name="username" className="inp" onChange={handleChange}/>
@@ -57,6 +58,8 @@ function Page() {
         {load && <p className="load">Loading...</p>}
         {!load && flag && <p className="ae">This username already exists. Please choose another one?</p>}
         {!load && !flag && <p className="s">{message}</p>}
+        <Link style={{textDecoration: "none"}} href="/api/post"><button className="button2">New Post</button></Link>
+        <Link style={{textDecoration: "none"}} href="/api/look"><button className="button2">Find Jobs</button></Link>
       </div>
     </>
   )

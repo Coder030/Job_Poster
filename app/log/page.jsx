@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import "./style.css";
 
 function Page() {
@@ -16,7 +17,7 @@ function Page() {
     console.log("hello" + name2);
     try {
       setLoad(true)
-      const response = await fetch("http://localhost:2000/get_cookie", {
+      const response = await fetch("https://test-backend-p5ig.onrender.com/get_cookie", {
         method: 'POST',
         body: JSON.stringify({
           name: name2
@@ -56,6 +57,8 @@ function Page() {
         <a className="a" style={{color: "black", position: "relative", bottom: "75px", left: "31%", textDecoration: "underline"}} href="/sign">Click here to sign in</a>
         {load && <p className="load">Loading...</p>}
         {!load && <p className={`fornf${flag ? '': 'nf'}`}>{message}</p>}
+        <Link style={{textDecoration: "none"}} href="/api/post"><button className="button2">New Post</button></Link>
+        <Link style={{textDecoration: "none"}} href="/api/look"><button className="button2">Find Jobs</button></Link>
       </div>
     </>
   );

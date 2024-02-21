@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+.e{
+  font-size: 20px;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ph{
+  font-size: 20px;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+}
+.head {
+  text-align: center;
+  font-size: 45px;
+  position: relative;
+  top:10px;
+  font-family: 'Rubik Vinyl', system-ui;
+}
+.things{
+  padding-top: 2px;
+  padding-bottom: 15px;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: rgb(249, 247, 247);
+  width: 460px;
+  border-radius: 5px;
+}
+.inf{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Inter;
+}
+.heading{
+  font-size: 25px;
+  font-family: 'Protest Revolution', sans-serif;
+  text-align: center;
+}
+.comp{
+  text-align: center;
+  font-family: 'Kode Mono';
+  font-weight: 600;
+  font-size: 23px;
+}
+.button{
+  margin: 0 auto;
+  display: block;
+  width: 150px;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  background-color: #3B82F6;
+  color: white;
+}
+.l{
+  margin: 0 auto;
+  display: flex;
+    width: 90px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    background-color: #3B82F6;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: Inter;
+    font-weight: 200;
+}
+.s{
+  margin: 0 auto;
+  display: flex;
+    width: 90px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    background-color: #3B82F6;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter;
+    font-weight: 200;
+}
+.l:hover, .s:hover {
+  background-color: #543bf6;
+}
+.sorry{
+  text-align: center;
+}
+.link{
+  text-decoration: none;
+}
+.np{
+  margin: 0 auto;
+  display: block;
+  width: 130px;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  background-color: #3B82F6;
+  color: white;
+  position: relative;
+  position: relative;
+  text-decoration: none;
+  margin-top: 100px;
+  margin-bottom: 15px;
+  font-family: Inter;
+}
+.np:hover{
+  background-color: #6232fe;
+}
+.tis{
+  /* display: flex; */
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.np2{
+  margin: 0 auto;
+  display: block;
+  width: 130px;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  background-color: #3B82F6;
+  color: white;
+  position: relative;
+  position: relative;
+  text-decoration: none;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  font-family: Inter;
+}
+.np2:hover{
+  background-color: #6232fe;
+}

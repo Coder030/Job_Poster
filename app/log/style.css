@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .div1{
   background-color: #f1f1f1;
   width: 350px;
@@ -68,4 +72,24 @@
   font-size: 25px;
   position: relative;
   bottom: 30px;
+}
+.button2{
+    margin: 0 auto;
+    display: block;
+    width: 130px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    background-color: #3B82F6;
+    color: white;
+    position: relative;
+    position: relative;
+    top: 90px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-family: Inter;
+    font-weight: 200;
+}
+.button2:hover{
+  background-color: #673bf6;
 }

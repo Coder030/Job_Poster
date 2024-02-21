@@ -9,6 +9,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const user = {}
   return (
       <html lang="en">
         <body>{children}</body>

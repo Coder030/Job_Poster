@@ -27,7 +27,7 @@ export default function Page() {
     const createAccount = async () => {
       console.log(comp, post, phn, em);
       
-      const response = await fetch("http://localhost:2000/api", {
+      const response = await fetch("https://test-backend-p5ig.onrender.com/api", {
         method: 'POST',
         body: JSON.stringify({
           item: {
