@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 .div1{
   background-color: #f1f1f1;
   width: 350px;
@@ -7,18 +12,22 @@
   padding: 50px;
   margin: 0;
   position: absolute;
+  text-align: center;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  padding-bottom: 100px;
 }
 .lab{
+  text-align: center;
   font-size: 20px;
+  color: black;
 }
 .inp{
   height: 30px;
   width: 250px;
-  border: solid 0.5px black;
+  border: 0.5px solid black;
   outline: none;
   border-radius: 3px;
   position: relative;
@@ -34,7 +43,10 @@
   height: 40px;
   width: 100px;
   position: relative;
-  left: 37.5%;
+  font-family: Inter;
+  font-weight: 200;
+  margin-bottom: 30px;
+  /* left: 37.5%; */
 }
 .button:hover{
   background-color: rgb(113, 33, 243);
@@ -75,5 +87,27 @@
   font-weight: 200;
 }
 .button2:hover{
-background-color: #673bf6;
+  background-color: #673bf6;
+}
+.headitis{
+  text-align: center;
+  font-family: Inter;
+  font-weight: 300;
+}
+.pyeah{
+  text-align: center;
+  margin: 0 auto;
+  height: 33px;
+  margin-bottom: 20px;
+  font-family: Inter;
+  font-weight: 200px;
+}
+.a{
+  color: black; 
+  position: relative; 
+  bottom: 75px; 
+  /* left: 31%;  */
+  font-family: Inter;
+  font-weight: 300;
+  text-decoration: underline
 }

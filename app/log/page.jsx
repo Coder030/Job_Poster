@@ -45,13 +45,13 @@ function Page() {
 
   return (
     <>
-    <h1 style={{textAlign: "center"}}>This is the log in page. This page is for you if you have already registered</h1>
+    <h1 className="headitis">This is the log in page. This page is for you if you have already registered</h1>
       <div className="div1">
-        <label htmlFor="username" className="lab">Username: </label>
+        <label htmlFor="username" className="lab"><p className="pyeah">Username: </p></label>
         <input value={name2} autoComplete="off" type="text" name="username" className="inp" onChange={handleChange}/>
         <button onClick={fetchCookie} className="button">Submit</button>
-        <p style={{textAlign: "center", position: "relative", bottom: "30px", color: "black"}}>New here?</p>
-        <a className="a" style={{color: "black", position: "relative", bottom: "75px", left: "31%", textDecoration: "underline"}} href="/sign">Click here to sign in</a>
+        <p style={{textAlign: "center", position: "relative", bottom: "30px", color: "black", fontFamily: "Inter", fontWeight: "200"}}>New here?</p>
+        <a className="a" href="/sign">Click here to sign up</a>
         {load && <p className="load">Loading...</p>}
         {!load && <p className={`fornf${flag ? '': 'nf'}`}>{message}</p>}
         <Link style={{textDecoration: "none"}} href="/api/post"><button className="button2">New Post</button></Link>

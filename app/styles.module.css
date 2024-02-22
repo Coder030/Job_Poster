@@ -41,8 +41,8 @@
 .np{
     margin: 0 auto;
     display: block;
-    width: 130px;
-    height: 40px;
+    /* width: 130px;
+    height: 40px; */
     border-radius: 7px;
     border: none;
     background-color: #3B82F6;
@@ -56,4 +56,14 @@
 }
 .np:hover{
     background-color: #6232fe;
+}
+.i1{
+    width: 290px;
+    height: 435px;
+}
+.slot1{
+    position: relative;
+    top: 62px;
+    width: 590px;
+    margin: 0 auto;
 }

@@ -1,4 +1,5 @@
 import styles from "./styles.module.css"
+import Navbar from "./Navbar"
 
 export const metadata = {
   title: 'Job Poster'
@@ -12,7 +13,10 @@ export default function RootLayout({
   const user = {}
   return (
       <html lang="en">
-        <body>{children}</body>
+        <body>
+          <Navbar/>
+          {children}
+        </body>
       </html>
   )
 }

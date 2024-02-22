@@ -60,7 +60,7 @@ export default function Page() {
     else{
       return (
 
-        <>
+        <div className={styles.nopey}>
           <h1 className={styles.headering}>Post new job</h1>
           <hr className={styles.h}/>
           <form action={createAccount} className={styles.form}>
@@ -73,11 +73,11 @@ export default function Page() {
             <br />
             <input value={post} type="text" name="post" id={styles.postInp} autoComplete="off" onChange={postfunc} required/>
             <br />
-            <label id={styles.contactLab} htmlFor="contact">Contact Number: </label>
+            <label id={styles.contactLab} htmlFor="contact">Phone Number: </label>
             <br />
             <input value={phn} type="text" name="contact" id={styles.contactInp} autoComplete="off" onChange={phnfunc} required/>
             <br />
-            <label id={styles.contactELab} htmlFor="contactE">Contact Email: </label>
+            <label id={styles.contactELab} htmlFor="contactE">Email: </label>
             <br />
             <input value={em} type="text" name="contactE" id={styles.contactEInp} autoComplete="off" onChange={emfunc} required/>
             {flag && <p>Please provide all the fields</p>}
@@ -85,7 +85,7 @@ export default function Page() {
               Create
             </button>
           </form>
-        </>
+        </div>
       )
     }
   }

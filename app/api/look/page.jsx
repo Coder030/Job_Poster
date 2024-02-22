@@ -98,6 +98,11 @@ export default function Page() {
       }
   }
   } catch (error) {
+    return(
+      <div className={styles.divitis}>
+        <p className={styles.gi}>Gathering Information...✅</p>
+      </div>
+    )
     console.error("Error fetching data:", error);
     // You may want to handle the error or display an error message here
   }

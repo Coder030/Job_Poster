@@ -144,3 +144,16 @@
 .np2:hover{
   background-color: #6232fe;
 }
+.gi{
+  text-align: center;
+  font-family: Inter;
+  font-weight: 200;
+  font-size: 25px;
+}
+.divitis{
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}

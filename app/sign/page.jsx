@@ -44,13 +44,13 @@ function Page() {
 
   return (
     <>
-    <h1 style={{textAlign: "center"}}>This is the sign up page. This page is for you if you have not already registered</h1>
+    <h1 className="headitis">This is the sign up page. This page is for you if you have not already registered</h1>
       <div className="div1">
-        <label htmlFor="username" className="lab">Username: </label>
+        <label htmlFor="username" className="lab"><p className="pyeah">Username: </p></label>
         <input value={name2} autoComplete="off" type="text" name="username" className="inp" onChange={handleChange}/>
         <button onClick={makeCookie} className="button">Submit</button>
-        <p style={{textAlign: "center", position: "relative", bottom: "30px", color: "black"}}>Already registered?</p>
-        <a className="a" style={{color: "black", position: "relative", bottom: "75px", left: "31%", textDecoration: "underline"}} href="/log">Click here to log in</a>
+        <p style={{textAlign: "center", position: "relative", bottom: "30px", color: "black", fontFamily: "Inter", fontWeight: "200"}}>Already registered?</p>
+        <a className="a" href="/log">Click here to log in</a>
         {load && <p className="load">Loading...</p>}
         {!load && flag && <p className="ae">This username already exists. Please choose another one?</p>}
         {!load && !flag && <p className="s">{message}</p>}

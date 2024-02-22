@@ -4,16 +4,20 @@ import styles from "./styles.module.css"
 import Link from "next/link"
 import { MdDarkMode } from "react-icons/md";
 import { useEffect, useState } from "react";
+import logo1 from "./ph1.png"
+import logo2 from "./ph2.png"
+import Image from "next/image";
 
 export default function Page() {
   return(
     <>
       <header className={styles.header}>Job Poster</header>
-      <p className={styles.p}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate inventore iste veritatis voluptatum, eveniet voluptas eos beatae deleniti autem corporis, nemo veniam sint quis! In ut vel magni quas cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate inventore iste veritatis voluptatum, eveniet voluptas eos beatae deleniti autem corporis, nemo veniam sint quis! In ut vel magni quas cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate inventore iste veritatis voluptatum, eveniet voluptas eos beatae deleniti autem corporis, nemo veniam sint quis! In ut vel magni quas cumque!</p>
-      <Link className={styles.link} href="/api/post"><button className={styles.np}>New Post</button></Link>
-      <Link className={styles.link} href="/api/look"><button className={styles.fj}>Find Jobs</button></Link>
-      <Link className={styles.link} href="/log"><button className={styles.np}>Log in</button></Link>
-      <Link className={styles.link} href="/sign"><button className={styles.np}>Sign up</button></Link>
+      <p className={styles.p}>Hello there! This is my project. I am Kartik Garg, of class 6th. I love coding and have made many projects 👨🏻‍💻. In the footer below... you can see some of the best of them. I hope you like this project. Please go on and look at my project... but do not forget. Before you move on, please log in or sign up! 😁</p>
+      <div className={styles.slot1}>
+        <Image className={styles.i1} src={logo1} alt={""}></Image>
+        <Image className={styles.i1} src={logo2} alt={""}></Image>
+      </div>
+      
     </>
 
   )
