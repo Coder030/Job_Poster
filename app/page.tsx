@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import logo1 from "./ph1.png"
 import logo2 from "./ph2.png"
 import Image from "next/image";
+import Footer from "./Footer";
 
 export default function Page() {
   return(
@@ -17,6 +18,7 @@ export default function Page() {
         <Image className={styles.i1} src={logo1} alt={""}></Image>
         <Image className={styles.i1} src={logo2} alt={""}></Image>
       </div>
+      <Footer></Footer>
       
     </>
 
