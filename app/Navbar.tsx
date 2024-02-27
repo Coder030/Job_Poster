@@ -8,7 +8,6 @@ import { useRouter } from "next/navigation";
 
 function Navbar() {
   const router = useRouter();
-  const nothing = "";
   const han = () => {
     router.push("https://github.com/coder030");
   };

@@ -1,17 +1,17 @@
-.footers{
-  padding: 20px;
-  background-color: rgb(26, 26, 98);
-  color: white;
-  position: relative;
-  top: 140px;
+.footers {
+    padding: 20px;
+    background-color: rgb(26, 26, 98);
+    color: white;
+    position: relative;
+    top: 140px;
 }
-.isP{
-  font-size: 25px;
-  text-align: center;
-  font-family: Inter;
+.isP {
+    font-size: 25px;
+    text-align: center;
+    font-family: Inter;
 }
-.isLink{
-  text-align: center;
-  font-size: 20px;
-  color: rgb(0, 166, 255);
+.isLink {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 166, 255);
 }
