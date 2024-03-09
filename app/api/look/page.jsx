@@ -28,7 +28,7 @@ export default function Page() {
         );
         var data1 = await me.json();
         const response = await fetch(
-          "https://test-backend-p5ig.onrender.com/api/full",
+          "https://test-backend-p5ig.onrender.com/full",
           {
             method: "GET",
             credentials: "include",
@@ -48,21 +48,7 @@ export default function Page() {
       };
       fetchData();
     }, [data2]);
-    if (data2.message === "nvt") {
-      return (
-        <>
-          <p style={{ textAlign: "center", fontSize: "35px" }}>
-            Please login first...
-          </p>
-          <Link className={styles.l} href="/log">
-            Login
-          </Link>
-          <Link className={styles.s} href="/sign">
-            Signin
-          </Link>
-        </>
-      );
-    } else {
+
       if (data2.length > 0) {
         return (
           <>
@@ -130,7 +116,6 @@ export default function Page() {
           </>
         );
       }
-    }
   } catch (error) {
     return (
       <div className={styles.divitis}>
